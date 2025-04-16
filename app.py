@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET'])
 def getRes():
     input_text = request.args.get('sendtext')
-    url = "https://f8b2-220-197-4-72.ngrok-free.app/"
+    url = "https://f3d7-220-197-4-72.ngrok-free.app/"
     params = {
         "sendtext": input_text
     }
