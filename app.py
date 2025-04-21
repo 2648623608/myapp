@@ -5,7 +5,8 @@ app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
 @app.route('/', methods=['POST'])
 def getRes():
-    input_text = request.args.get('sendtext')
+    data = request.get_json()
+    input_text = data.get('sendtext')
     url = "http://117.50.33.172:8000/"
     params = {
         "sendtext": input_text
