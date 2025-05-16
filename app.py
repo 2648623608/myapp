@@ -13,7 +13,7 @@ def getRes():
     if not input_text:
         return jsonify({"error": "No input text provided"}), 400
 
-    url = "http://117.50.33.172:8000/"
+    url = "http://117.50.186.224:8000/"
     headers = {
         "Content-Type": "application/json",
     }
